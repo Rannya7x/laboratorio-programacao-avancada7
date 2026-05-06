@@ -1,3 +1,7 @@
+#docs
+*.png
+*.pdf
+
 # Prerequisites
 *.d
 
