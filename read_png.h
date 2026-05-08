@@ -6,14 +6,16 @@ struct png_chunk_hdr {
     char type[4];
 }__attribute__((packed));
 
-struct png_chunk_idr {
+struct png_ihdr {
     int width;
     int height;
-    unsigned bit_depth;
-    unsigned color_type;
-    unsigned compression;
-    unsigned filter;
-    unsigned interlace;
+    unsigned char bit_depth;
+    unsigned char color_type;
+    unsigned char compression;
+    unsigned char filter;
+    unsigned char interlace;
 }__attribute__((packed));
+
+void chunk_ler(FILE *png_file);
 
 #endif
