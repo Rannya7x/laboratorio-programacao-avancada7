@@ -2,10 +2,11 @@
 
 #include "stdio.h"
 #include "stdlib.h"
+#include "read_png.h"
 
-int main(int argc, char *argv[]) {
+int main(int argc, char **argv[]) {
     if (argc < 2){
-        printf("Uso: %s <number>\n", argv[0]);
+        printf("Uso: %s <arquivo.png>\n", argv[0]);
         return 1;
     }
 
